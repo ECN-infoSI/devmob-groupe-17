@@ -29,9 +29,10 @@ class MainActivity : ComponentActivity() {
                     Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
                 )
                 selectedFileUri = uri
-                startActivity(Intent(this, CodeEditorActivity::class.java).apply {
-                    putExtra("fileUri", uri.toString())
+                startActivity(Intent(this, TabbedCodeEditorActivity::class.java).apply {
+                    putExtra("newFileUri", uri.toString())
                 })
+
             }
         }
 
