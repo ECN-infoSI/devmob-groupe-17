@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeOneTheRoad"
         tools:targetApi="31">
+
+        <activity android:name=".CodeEditorActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
